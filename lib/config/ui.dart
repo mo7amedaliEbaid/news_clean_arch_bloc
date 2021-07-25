@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/widgets.dart';
 
-class UI {
+sealed class UI {
   static MediaQueryData? _mediaQueryData;
   static double? width;
   static double? height;

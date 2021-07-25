@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
 
-import 'app_theme.dart';
+part of 'app_theme.dart';
 
 const fontFamily = '';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'app_dimensions.dart';
-import 'core_theme.dart';
+import 'app_theme.dart';
 
-class AppText {
+sealed class AppText {
   static TextStyle? btn;
 
   // Headings

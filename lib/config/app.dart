@@ -7,7 +7,7 @@ import 'ui.dart';
 import 'ui_props.dart';
 import 'app_theme.dart';
 
-class App {
+sealed class App {
   static bool? isLtr;
   static bool showAds = false;
 

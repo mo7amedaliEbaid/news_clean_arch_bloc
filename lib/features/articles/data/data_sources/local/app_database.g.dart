@@ -7,7 +7,7 @@ part of 'app_database.dart';
 // **************************************************************************
 
 // ignore: avoid_classes_with_only_static_members
-interface class $FloorAppDatabase {
+sealed class $FloorAppDatabase {
   /// Creates a database builder for a persistent database.
   /// Once a database is built, you should keep a reference to it and re-use it.
   static _$AppDatabaseBuilder databaseBuilder(String name) =>
@@ -20,7 +20,7 @@ interface class $FloorAppDatabase {
       _$AppDatabaseBuilder(null);
 }
 
-class _$AppDatabaseBuilder {
+interface class _$AppDatabaseBuilder {
   _$AppDatabaseBuilder(this.name);
 
   final String? name;
@@ -56,7 +56,7 @@ class _$AppDatabaseBuilder {
   }
 }
 
-class _$AppDatabase extends AppDatabase {
+interface class _$AppDatabase extends AppDatabase {
   _$AppDatabase([StreamController<String>? listener]) {
     changeListener = listener ?? StreamController<String>.broadcast();
   }
@@ -96,7 +96,7 @@ class _$AppDatabase extends AppDatabase {
   }
 }
 
-class _$ArticleDao extends ArticleDao {
+interface class _$ArticleDao extends ArticleDao {
   _$ArticleDao(this.database, this.changeListener)
       : _queryAdapter = QueryAdapter(database),
         _articleModelInsertionAdapter = InsertionAdapter(

@@ -7,6 +7,4 @@ export 'space.dart';
 export 'space_ext.dart';
 export 'ui.dart';
 
-export 'core_theme.dart' show fontFamily;
 export 'date_ext.dart';
-export 'routes.dart';

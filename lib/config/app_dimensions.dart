@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 import 'ui.dart';
 
-class AppDimensions {
+sealed class AppDimensions {
   static double? maxContainerWidth;
   static double? miniContainerWidth;
 

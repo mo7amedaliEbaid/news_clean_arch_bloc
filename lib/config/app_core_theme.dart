@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 
-class AppCoreTheme {
+part of 'app_theme.dart';
+
+interface class AppCoreTheme {
   Color? primary;
   Color? primaryLight;
   Color? primaryDark;

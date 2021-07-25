@@ -5,7 +5,7 @@ import '../features/articles/presentation/pages/bookmarked_article/bookmarked_ar
 import '../features/articles/presentation/pages/home/news.dart';
 
 
-class AppRoutes {
+sealed class AppRoutes {
   static Route onGenerateRoutes(RouteSettings settings) {
     switch (settings.name) {
       case '/':

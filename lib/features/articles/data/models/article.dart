@@ -3,6 +3,7 @@ import '../../../../core/consts/consts.dart';
 import '../../domain/entities/article.dart';
 
 @Entity(tableName: 'article',primaryKeys: ['id'])
+
 interface class ArticleModel extends ArticleEntity {
   const ArticleModel({
     int? id,
@@ -30,7 +31,7 @@ interface class ArticleModel extends ArticleEntity {
       title: map['title'] ?? "",
       description: map['description'] ?? "",
       url: map['url'] ?? "",
-      urlToImage: map['urlToImage'] != null && map['urlToImage'] != "" ? map['urlToImage'] : kDefaultImage,
+      urlToImage: map['urlToImage'] != null && map['urlToImage'] != "" ? map['urlToImage'] : APPCONSTS.kDefaultImage,
       publishedAt: map['publishedAt'] ?? "",
       content: map['content'] ?? "",
     );

@@ -20,9 +20,9 @@ interface class ArticleRepoImpl implements ArticleRepository {
   Future<DataState<List<ArticleModel>>> getArticles() async {
    try {
     final httpResponse = await _newsApiService.getArticles(
-      apiKey:APIKEY,
-      country:COUNTRY,
-      category:CATEGORY,
+      apiKey:APPCONSTS.APIKEY,
+      country:APPCONSTS.COUNTRY,
+      category:APPCONSTS.CATEGORY,
     );
 
     if (httpResponse.response.statusCode == HttpStatus.ok) {

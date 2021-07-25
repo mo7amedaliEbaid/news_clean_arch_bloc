@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'ui.dart';
 import 'app_dimensions.dart';
 
-class Space {
+sealed class Space {
   static Widget? x;
   static Widget? y;
   static Widget? x1;
