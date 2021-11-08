@@ -49,7 +49,7 @@ dependencies:
   floor: any
 
   #make request to api
-  retrofit: ^3.0.1
+  retrofit:
 
   #Hooks
   flutter_hooks: ^0.18.3
@@ -60,9 +60,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  retrofit_generator: ^3.0.1+1
+  retrofit_generator:
   floor_generator: ^1.2.0
-  build_runner: ^2.2.0
+  build_runner:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -79,8 +79,7 @@ flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
-  # the material Icons class.
-  generate: true
+
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
