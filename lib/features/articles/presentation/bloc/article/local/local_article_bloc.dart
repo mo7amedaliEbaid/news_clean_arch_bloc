@@ -32,13 +32,13 @@ interface class LocalArticleBloc extends Bloc<LocalArticleEvent,LocalArticleStat
   }
   
   void onRemoveArticle(RemoveArticleEvent removeArticle,Emitter<LocalArticleState> emit) async {
-    await _removeArticleUseCase(params: removeArticle.article);
+    await _removeArticleUseCase(paramaters: removeArticle.article);
     final articles = await _getSavedArticleUseCase();
     emit(LocalArticleLoaded(articles));
   }
 
   void onSaveArticle(SaveArticleEvent saveArticle,Emitter<LocalArticleState> emit) async {
-    await _saveArticleUseCase(params: saveArticle.article);
+    await _saveArticleUseCase(paramaters: saveArticle.article);
     final articles = await _getSavedArticleUseCase();
     emit(LocalArticleLoaded(articles));
   }

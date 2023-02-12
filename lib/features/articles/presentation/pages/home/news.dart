@@ -24,7 +24,7 @@ class NewsPage extends StatelessWidget {
   _buildAppbar(BuildContext context) {
     return AppBar(
       title: const Text(
-          'Get Informed',
+          'Hot Articles',
         ),
         actions: [
           GestureDetector(

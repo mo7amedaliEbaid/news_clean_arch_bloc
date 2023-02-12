@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:ionicons/ionicons.dart';
+import 'package:news_clean_arch_bloc/config/app_typography.dart';
 import '../../../../../injection_container.dart';
 import '../../../domain/entities/article.dart';
 import '../../bloc/article/local/local_article_bloc.dart';
@@ -29,11 +29,11 @@ class Bookmarks extends HookWidget {
         builder: (context) => GestureDetector(
           behavior: HitTestBehavior.opaque,
           onTap: () => _onBackButtonTapped(context),
-          child: const Icon(Ionicons.chevron_back, color: Colors.black),
+          child: const Icon(Icons.arrow_back_ios),
         ),
       ),
       title:
-          const Text('Saved Articles', style: TextStyle(color: Colors.black)),
+          const Text('Bookmarks'),
     );
   }
 
@@ -52,10 +52,9 @@ class Bookmarks extends HookWidget {
 
   Widget _buildArticlesList(List<ArticleEntity> articles) {
     if (articles.isEmpty) {
-      return const Center(
+      return  Center(
           child: Text(
-        'NO SAVED ARTICLES',
-        style: TextStyle(color: Colors.black),
+        'NO SAVED ARTICLES',style: AppText.b1b,
       ));
     }
 

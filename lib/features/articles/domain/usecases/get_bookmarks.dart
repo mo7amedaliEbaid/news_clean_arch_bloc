@@ -13,7 +13,7 @@ interface class GetBookmarks implements UseCase<List<ArticleEntity>,void>{
   GetBookmarks(this._articleRepository);
   
   @override
-  Future<List<ArticleEntity>> call({void params}) {
+  Future<List<ArticleEntity>> call({void paramaters}) {
     return _articleRepository.getBookmarks();
   }
   

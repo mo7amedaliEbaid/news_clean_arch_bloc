@@ -12,7 +12,7 @@ interface class GetArticleUseCase implements UseCase<DataState<List<ArticleEntit
   GetArticleUseCase(this._articleRepository);
   
   @override
-  Future<DataState<List<ArticleEntity>>> call({void params}) {
+  Future<DataState<List<ArticleEntity>>> call({void paramaters}) {
     return _articleRepository.getArticles();
   }
   
