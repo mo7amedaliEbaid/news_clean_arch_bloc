@@ -14,8 +14,16 @@
 ## Screen Shots
 <br />
 <p float="left">
-<img src="" width="170" />
-   
+   <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/articles.jpg" width="170" />
+   <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/article_details.jpg" width="170" />
+   <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/bookmarks.jpg" width="170" />
+</p>
+
+<br />
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/articles_wide.jpg" width="370" />
+   <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/bookmarks_w.jpg" width="370" />
+   <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/details_w.jpg" width="370" />
 </p>
 
 
