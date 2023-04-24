@@ -45,8 +45,6 @@ dependencies:
   #service locator
   get_it: ^7.6.0
 
-
-
   #Database
   floor: any
 
