@@ -1,27 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:news_clean_arch_bloc/features/presentation/pages/home/news.dart';
-import 'package:news_clean_arch_bloc/injection_container.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:news_clean_arch_bloc/config/core_theme.dart'as theme;
 
-Future<void> main() async{
+import 'config/routes.dart';
+import 'features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
+import 'features/daily_news/presentation/pages/home/news.dart';
+import 'injection_container.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await initializeDependencies();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+
+    return BlocProvider<RemoteArticleBloc>(
+      create: (context) => sl()..add(const GetArticleEvent()),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+       themeMode: ThemeMode.light,
+        theme: theme.themeLight,
+        onGenerateRoute: AppRoutes.onGenerateRoutes,
+        home: const NewsPage()
       ),
-      home: const NewsPage(),
     );
   }
 }
-
 
