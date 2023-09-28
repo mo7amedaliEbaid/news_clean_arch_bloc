@@ -6,7 +6,7 @@ part of 'news_api_service.dart';
 // RetrofitGenerator
 // **************************************************************************
 
-class _NewsApiService implements NewsApiService {
+interface class _NewsApiService implements NewsApiService {
   _NewsApiService(this._dio, {this.baseUrl}) {
     baseUrl ??= 'https://newsapi.org/v2';
   }

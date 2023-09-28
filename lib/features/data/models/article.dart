@@ -1,6 +1,6 @@
 import 'package:news_clean_arch_bloc/features/domain/entities/article.dart';
 
-class ArticleModel extends ArticleEntity {
+interface class ArticleModel extends ArticleEntity {
   const ArticleModel({
     int? id,
     String? author,
