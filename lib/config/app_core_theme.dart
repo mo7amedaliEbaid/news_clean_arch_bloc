@@ -75,6 +75,7 @@ class AppCoreTheme {
       textSub2: textSub2 ?? this.textSub2,
       shadow: shadow ?? this.shadow,
       shadowSub: shadowSub ?? this.shadowSub,
+
     );
   }
 }

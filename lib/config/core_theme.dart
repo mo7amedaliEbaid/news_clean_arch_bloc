@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'app_theme.dart';
 
-const fontFamily = 'Poppins';
+const fontFamily = '';
 
 final themeLight = ThemeData(
-  iconTheme: IconThemeData(size: 35),
+  iconTheme: IconThemeData(size: 35,color: Colors.white),
   fontFamily: fontFamily,
   primaryColor: AppTheme.light.primary,
   brightness: Brightness.light,

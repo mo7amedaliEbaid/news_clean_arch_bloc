@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../features/daily_news/domain/entities/article.dart';
-import '../features/daily_news/presentation/pages/article_details/article_details.dart';
-import '../features/daily_news/presentation/pages/bookmarked_article/bookmarked_article.dart';
-import '../features/daily_news/presentation/pages/home/news.dart';
+import '../features/articles/domain/entities/article.dart';
+import '../features/articles/presentation/pages/article_details/article_details.dart';
+import '../features/articles/presentation/pages/bookmarked_article/bookmarked_article.dart';
+import '../features/articles/presentation/pages/home/news.dart';
 
 
 class AppRoutes {
@@ -12,7 +12,7 @@ class AppRoutes {
         return _materialRoute(const NewsPage());
 
       case '/ArticleDetails':
-        return _materialRoute(ArticleDetailsView(article: settings.arguments as ArticleEntity));
+        return _materialRoute(ArticleDetailsPage(article: settings.arguments as ArticleEntity));
 
       case '/Bookmarks':
         return _materialRoute(const Bookmarks());

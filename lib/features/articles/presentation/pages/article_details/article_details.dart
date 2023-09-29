@@ -6,10 +6,10 @@ import '../../../../../injection_container.dart';
 import '../../../domain/entities/article.dart';
 import '../../bloc/article/local/local_article_bloc.dart';
 
-class ArticleDetailsView extends HookWidget {
+class ArticleDetailsPage extends HookWidget {
   final ArticleEntity? article;
 
-  const ArticleDetailsView({Key? key, this.article}) : super(key: key);
+  const ArticleDetailsPage({Key? key, this.article}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class ArticleDetailsView extends HookWidget {
           // DateTime
           Row(
             children: [
-               Icon(Icons.punch_clock, size: AppDimensions.normalize(7)),
+               Icon(Icons.punch_clock,color: Colors.blue, size: AppDimensions.normalize(7)),
               Space.x!,
               Text(
                 SuperString(article!.publishedAt!).date,

@@ -45,7 +45,7 @@ class NewsPage extends StatelessWidget {
           return const Center(child: CupertinoActivityIndicator());
         }
         if (state is RemoteArticleError) {
-          return const Center(child: Icon(Icons.refresh));
+          return const Center(child: Icon(Icons.refresh,color: Colors.blue,));
         }
         if (state is RemoteArticleLoaded) {
           return ListView.builder(

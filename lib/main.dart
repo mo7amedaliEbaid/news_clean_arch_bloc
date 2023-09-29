@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_clean_arch_bloc/config/core_theme.dart'as theme;
 
 import 'config/routes.dart';
-import 'features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
-import 'features/daily_news/presentation/pages/home/news.dart';
+import 'features/articles/presentation/bloc/article/remote/remote_article_bloc.dart';
+import 'features/articles/presentation/pages/home/news.dart';
 import 'injection_container.dart';
 
 Future<void> main() async {

@@ -62,7 +62,7 @@ class ArticleWidget extends StatelessWidget {
               ),
             ),
         errorWidget: (context, url, error) => Padding(
-              padding: const EdgeInsetsDirectional.only(end: 14),
+              padding: Space.all(),
               child: ClipRRect(
                 borderRadius:
                     BorderRadius.circular(AppDimensions.normalize(12)),
@@ -108,6 +108,7 @@ class ArticleWidget extends StatelessWidget {
               children: [
                 Icon(
                   Icons.timeline_outlined,
+                  color: Colors.blue,
                   size: AppDimensions.normalize(10),
                 ),
                 Space.xf(.5),
