@@ -1,11 +1,11 @@
 # news_clean_arch_bloc
 
-- Flutter News app 
+- Flutter News app.
 - clean architecture.
-- Bloc
-- Bookmarks
-- Article Details
-- Responsive Ui
+- Bloc State Management.
+- Bookmarks.
+- Article Details.
+- Responsive Ui.
 
 ### Attention
 Api Key is missing from this repo, You must add yours.
