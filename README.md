@@ -1,7 +1,7 @@
 # news_clean_arch_bloc
 
 - Flutter News app.
-- clean architecture.
+- Clean Architecture.
 - Bloc State Management.
 - Bookmarks.
 - Article Details.
