@@ -19,6 +19,8 @@ Api Key is missing from this repo, You must add yours.
 
 
 ## Screen Shots
+
+#### Portrait
 <br />
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/articles.jpg" width="170" />
@@ -26,6 +28,8 @@ Api Key is missing from this repo, You must add yours.
    <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/bookmarks.jpg" width="170" />
 </p>
 
+
+#### Landscape 
 <br />
 <p float="left">
    <img src="https://github.com/mo7amedaliEbaid/newa_clean_arch_bloc/blob/f318e0fcece51a6407a9ddd3d3bc0460cd61cb4e/screenshots/articles_wide.jpg" width="370" />
